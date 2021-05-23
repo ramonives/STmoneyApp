@@ -7,7 +7,7 @@ const AppStack = createStackNavigator();
 
 export const Routes = () => {
   return (
-    <AppStack.Navigator>
+    <AppStack.Navigator  screenOptions={{headerTransparent: true, headerShown: false}}> 
       <AppStack.Screen name="Home" component={Home}/>
     </AppStack.Navigator>
   );
