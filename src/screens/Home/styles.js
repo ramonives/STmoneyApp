@@ -19,7 +19,7 @@ export const styles = StyleSheet.create({
     fontSize: 30,
     fontFamily: 'Poppins-Bold'
   },
-  NewTransitionButton:{
+  NewTransactionButton:{
     backgroundColor: '#6933FF',
     padding: 10,
     borderRadius: 5,
@@ -28,7 +28,7 @@ export const styles = StyleSheet.create({
 
 
   },
-  TextNewTransitionButton: {
+  TextNewTransactionButton: {
     color: '#FFFFFF',
     fontFamily: 'Poppins-Regular',
     fontSize: 18, 
