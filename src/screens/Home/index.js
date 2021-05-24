@@ -31,6 +31,20 @@ export const Home = () => {
       type: 'Vendas',
       data: '05/06/2020',
     },
+    {
+      id: 4,
+      title: 'Desenvolvimento de app',
+      amount: '3.000,00',
+      type: 'Vendas',
+      data: '05/06/2020',
+    },
+    {
+      id: 5,
+      title: 'Desenvolvimento de app',
+      amount: '3.000,00',
+      type: 'Vendas',
+      data: '05/06/2020',
+    },
     
   ];
 
