@@ -4,6 +4,9 @@ import {Text, View} from 'react-native';
 import {styles} from './styles';
 
 export const TransactionsCards = ({transaction}) => {
+
+  console.log("=> ", transaction);
+
   return (
     <>
       <View style={styles.ContainerCard}>
@@ -15,7 +18,7 @@ export const TransactionsCards = ({transaction}) => {
         </Text>
         <View style={styles.ContainerRow}>
           <Text numberOfLines={1} style={styles.TextType}>
-            {transaction.type}
+            {transaction.category}
           </Text>
           <Text numberOfLines={1} style={styles.TextData}>
             {transaction.data}
