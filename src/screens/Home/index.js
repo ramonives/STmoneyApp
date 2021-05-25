@@ -45,7 +45,6 @@ export const Home = () => {
       type: 'Vendas',
       data: '05/06/2020',
     },
-    
   ];
 
   return (
@@ -57,32 +56,13 @@ export const Home = () => {
             <Text style={styles.TextNewTransactionButton}>Nova transação</Text>
           </TouchableOpacity>
         </View>
-        <View style={{marginTop: 32}}>
+        <View style={styles.ContainerDashboard}>
           <Dashboard />
         </View>
-        <View style={{marginTop: 32, flex: 1}}>
-          <View
-            style={{
-              flexDirection: 'row',
-              justifyContent: 'space-between',
-              marginBottom: 16,
-            }}>
-            <Text
-              style={{
-                color: 'white',
-                fontFamily: 'Poppins-Regular',
-                fontSize: 20,
-              }}>
-              Listagem
-            </Text>
-            <Text
-              style={{
-                color: 'white',
-                fontFamily: 'Poppins-Regular',
-                fontSize: 20,
-              }}>
-              5 itens
-            </Text>
+        <View style={styles.ContainerTransactionsList}>
+          <View style={styles.ContainerTitleList}>
+            <Text style={styles.TitleList}>Listagem</Text>
+            <Text style={styles.TitleList}>5 itens</Text>
           </View>
           <FlatList
             data={DATA}
