@@ -1,11 +1,9 @@
-import React from 'react';
-import {Text, View} from 'react-native';
+import React from "react";
+import { Text, View } from "react-native";
+import { format } from "date-fns";
+import { styles } from "./styles";
 
-import {styles} from './styles';
-
-export const TransactionsCards = ({transaction}) => {
-
-  console.log("=> ", transaction);
+export const TransactionsCards = ({ transaction }) => {
 
   return (
     <>
@@ -21,7 +19,7 @@ export const TransactionsCards = ({transaction}) => {
             {transaction.category}
           </Text>
           <Text numberOfLines={1} style={styles.TextData}>
-            {transaction.data}
+            {format(transaction.createdAt, "dd/MM/yyyy")}
           </Text>
         </View>
       </View>

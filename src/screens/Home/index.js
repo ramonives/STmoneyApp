@@ -1,18 +1,18 @@
-import React, {useContext, useRef, useState} from 'react';
+import React, { useContext, useRef, useState } from "react";
 
-import LinearGradient from 'react-native-linear-gradient';
+import LinearGradient from "react-native-linear-gradient";
 
-import {FlatList, Text, TouchableOpacity, View} from 'react-native';
+import { FlatList, Text, TouchableOpacity, View } from "react-native";
 
-import {Dashboard} from '../../components/Dashboard';
-import {TransactionsCards} from '../../components/TransactionsCards';
-import TransactionsContext from '../../contexts/TransactionsContext';
-import {NewTransactionModal} from '../../components/Modals/NewTransactionModal/NewTransactionModal';
+import { Dashboard } from "../../components/Dashboard";
+import { TransactionsCards } from "../../components/TransactionsCards";
+import TransactionsContext from "../../contexts/TransactionsContext";
+import { NewTransactionModal } from "../../components/Modals/NewTransactionModal/NewTransactionModal";
 
-import {styles} from './styles';
+import { styles } from "./styles";
 
 export const Home = () => {
-  const {transactions} = useContext(TransactionsContext);
+  const { transactions } = useContext(TransactionsContext);
 
   const modalizeRef = useRef(null);
 
@@ -21,7 +21,7 @@ export const Home = () => {
   };
 
   return (
-    <LinearGradient style={{flex: 1}} colors={['#5429CC', '#7159c1']}>
+    <LinearGradient style={{ flex: 1 }} colors={["#5429CC", "#7159c1"]}>
       <View style={styles.Container}>
         <View style={styles.ContainerHeader}>
           <Text style={styles.TextAppName}>STmoney</Text>
@@ -41,7 +41,7 @@ export const Home = () => {
           </View>
           <FlatList
             data={transactions}
-            renderItem={({item}) => <TransactionsCards transaction={item} />}
+            renderItem={({ item }) => <TransactionsCards transaction={item} />}
             keyExtractor={item => item.id}
             showsVerticalScrollIndicator={false}
           />

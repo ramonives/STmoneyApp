@@ -11,7 +11,6 @@ export const Dashboard = () => {
   return (
     <View style={{flexDirection: 'row', justifyContent: 'space-between'}}>
       <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
-        
         <View style={styles.ContainerContent}>
           <View style={styles.ContainerTitleWithIcon}>
             <Text style={styles.Title}>Entradas</Text>
@@ -35,7 +34,6 @@ export const Dashboard = () => {
           </View>
           <Text style={styles.AmountTotal}>R$ 7.000</Text>
         </View>
-
       </ScrollView>
     </View>
   );
